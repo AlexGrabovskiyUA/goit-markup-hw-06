@@ -10,9 +10,48 @@ ul {
 a {
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
 
-
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    max-width: 1158px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* --------------------------------Header----------------------------------- */
+.header{
+    display: flex;
+    border-bottom: 3px #FFFFFF;
+    
+}
+.list{
+justify-content: space-between;
+}
+.navigation-panel{
+    display:flex;
+        padding: 5px;
+}
+
+
+
 .logo-link{
         font-family:"Raleway", sans-serif;
         font-weight: 700;
@@ -21,6 +60,9 @@ a {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        padding:24px 0;
+        margin-left: 156px;
+        margin-right: 76px;
 }
 .logo-link:focus,.logo-link:hover{
         color: #4d5ae5;
@@ -34,12 +76,10 @@ a {
         text-transform: uppercase;
         color: #2e2f42;
 }
-
-.panel-list {
-        color:#2e2f42;
+.list {
 }
-
-.link-panel {
+.link-header {
+        display: flex;
         font-weight:500;
         font-size: 16px;
         line-height: 1.5;
@@ -48,7 +88,7 @@ a {
 }
 
 
-.panel-address{
+.address{
     font-style: normal;
 }
 
@@ -73,18 +113,23 @@ a {
     color: #404bbf;
 }
 /* --------------------------------Effective Solutions for Your Business------------------------------- */
-
+.section{
+    padding: 120px 0;
+}
 .hero {
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-title {
+    justify-content: center;
     font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #fff;
         text-align: center;
+        margin: 0 auto 48px auto;
 }
 
 .btn-hero {
@@ -96,12 +141,26 @@ a {
         color: #fff;
         cursor:pointer;
         background: #4d5ae5;
+
 }
 .btn-hero:hover,.btn-hero:focus{
 background-color: #404BBF;
 }
 
 /* --------------------------------Information----------------------------------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .blog{
     background-color: #F4F4FD;
@@ -169,6 +228,9 @@ background-color: #FFFFFF;
 }
 
 /* --------------------------------Our Portfolio----------------------------------- */
+.blog{
+    visually-hidden
+}
 .promo{
 background-color: #FFFFFF;
 }
