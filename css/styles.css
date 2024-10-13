@@ -183,11 +183,13 @@ background-color: #404BBF;
 /* --------------------------------Information----------------------------------- */
 
 .blog{
+    display: flex;
     background-color: #F4F4FD;
+    padding: 188px 0 188px;
 }
 .info-container{
     display: block;
-    padding: 188px 0 188px;
+    
 }
 .visually-hidden {
     position: absolute;
@@ -207,8 +209,8 @@ background-color: #404BBF;
     gap: 24px;
 
 }
-.blog-title{
-    display: flex;
+.blog-item{
+    display: block;
     padding-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
