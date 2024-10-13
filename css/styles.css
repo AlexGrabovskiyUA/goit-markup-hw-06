@@ -274,7 +274,7 @@ background-color: #404BBF;
     border-radius: 0 0 4px 4px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis:calc((100% - 3 * 24px) / 4);
 }
 .public_items {
         display: flex;
