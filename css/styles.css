@@ -17,7 +17,7 @@ h4,
 h5,
 h6,
 p {
-margin: 0;
+    margin: 0;
 }
 
 ul {
@@ -26,10 +26,9 @@ ul {
     margin: 0;
 }
 .container {
-    display: flex;
-    max-width: 1158px;
-    padding: 0px 15px;
-    margin: 0 auto;
+max-width: 1158px; 
+padding: 0 15px;
+margin: 0 auto;
 }
 img{
     display: block;
@@ -37,22 +36,28 @@ img{
     height: auto;
 }
 /* --------------------------------Header----------------------------------- */
-.header{
-    display: flex;
-    border-bottom: 3px #FFFFFF;
-    
+.panel{
+    border-bottom: 1px solid #e7e9fc;
 }
-.list{
-justify-content: space-between;
+.header-container{
+    display: flex;
+    align-items: center;
 }
 .navigation-panel{
-    display:flex;
-        padding: 5px;
+    display: flex;
+    align-items: center;
 }
-
-
-
+.link-menu{
+display: flex;
+align-items:center;
+gap: 40px;
+}
+.list-address{
+    display: flex;
+    align-items:center;
+}
 .logo-link{
+    display: flex;
         font-family:"Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -60,13 +65,14 @@ justify-content: space-between;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        padding:24px 0;
-        margin-left: 156px;
+        padding: 24px 0;
         margin-right: 76px;
 }
 .logo-link:focus,.logo-link:hover{
         color: #4d5ae5;
 }
+
+
 .span-logo {
         font-family:"Raleway", sans-serif;
         font-weight: 700;
@@ -76,23 +82,35 @@ justify-content: space-between;
         text-transform: uppercase;
         color: #2e2f42;
 }
-.list {
+
+.panel-list {
+        color:#2e2f42;
 }
-.link-header {
-        display: flex;
+
+.link-panel {
+    display: block;
+    padding: 24px 0;
         font-weight:500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
 }
 
-
-.address{
+.panel-address{
     font-style: normal;
+    margin-left: auto;
 }
-
+.list-address{
+    display:flex;
+            gap: 40px;
+}
 .link-address {
+        display: block;
+        align-items: center;
+        padding: 24px 0;
+
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -100,6 +118,7 @@ justify-content: space-between;
         color: #434455;
         font-style: normal;
 }
+
 .link-panel:hover {
         color: #404BBF;
 }
@@ -113,23 +132,19 @@ justify-content: space-between;
     color: #404bbf;
 }
 /* --------------------------------Effective Solutions for Your Business------------------------------- */
-.section{
-    padding: 120px 0;
-}
+
 .hero {
     background: #2e2f42;
-    padding: 188px 0;
 }
 
 .hero-title {
-    justify-content: center;
+    display: flex;
     font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #fff;
         text-align: center;
-        margin: 0 auto 48px auto;
 }
 
 .btn-hero {
@@ -141,13 +156,16 @@ justify-content: space-between;
         color: #fff;
         cursor:pointer;
         background: #4d5ae5;
-
 }
 .btn-hero:hover,.btn-hero:focus{
 background-color: #404BBF;
 }
 
 /* --------------------------------Information----------------------------------- */
+
+.blog{
+    background-color: #F4F4FD;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -155,23 +173,27 @@ background-color: #404BBF;
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.blog-list{
+    display: flex;
+    width: calc ((100% - 3 * 24px) / 4);
+    gap: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 120px;
 
-.blog{
-    background-color: #F4F4FD;
 }
-
 .blog-title{
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
 }
 
 .blog-text {
@@ -196,17 +218,28 @@ background-color: #404BBF;
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
-}
-.public_items{
-    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    margin-bottom: 72px;
+    }
+
+.public_items {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+            padding-left: 156px;
+            padding-right: 156px;
+            padding-bottom: 120px;
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-    background-color: #FFFFFF;
+        background-color: F4F4FD;
 }
 .public-list{
-background-color: #FFFFFF;
+background-color: #2e2f42;
 }
 .public_subtitle{
     font-weight: 500;
@@ -228,9 +261,6 @@ background-color: #FFFFFF;
 }
 
 /* --------------------------------Our Portfolio----------------------------------- */
-.blog{
-    visually-hidden
-}
 .promo{
 background-color: #FFFFFF;
 }
