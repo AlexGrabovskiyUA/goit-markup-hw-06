@@ -254,6 +254,7 @@ background-color: #404BBF;
         
 }
 .public{
+    display: block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -315,6 +316,7 @@ background-color: #2e2f42;
 background-color: #FFFFFF;
 display: flex;
 padding: 120px 0;
+
 }
 
 .promo-title{
@@ -325,12 +327,34 @@ padding: 120px 0;
         text-align: center;
         text-transform: capitalize;
         color: #2e2f42;
+        margin-bottom: 72px;
 }
 
 .promo-list{
     background-color: #FFFFFF;
-}
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+        column-gap: 24px;
+        justify-content: center;
 
+}
+.promo-item{
+    display: inline-block;
+    justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+}
+.promo-over{
+    display: block;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
 .promo-subtitle{
         font-weight:500;
         font-size:20px;
@@ -352,7 +376,7 @@ padding: 120px 0;
 .footer-aside {
     background: #2e2f42;
     display: block;
-        padding: 100px 0;
+    padding: 100px 0;
 }
 .footer-container{
     
