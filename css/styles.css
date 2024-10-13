@@ -184,7 +184,7 @@ background-color: #404BBF;
 
 .blog{
     display: flex;
-    background-color: #F4F4FD;
+    background-color: #FFFFFF;
     padding: 188px 0 188px;
 }
 .info-container{
@@ -246,9 +246,10 @@ background-color: #404BBF;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 32px 16px;
+        margin: 0 16px;
         gap: 8px;
         background-color: #F4F4FD;
+        padding: 32px 0;
         
         
 }
@@ -286,6 +287,9 @@ background-color: #404BBF;
 background-color: #2e2f42;
 }
 .public_subtitle{
+    display: flex;
+    text-align: center;
+    margin-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -296,6 +300,8 @@ background-color: #2e2f42;
 }
 
 .public_text{
+    display: flex;
+    text-align: center;
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
