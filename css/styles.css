@@ -314,6 +314,7 @@ background-color: #2e2f42;
 .promo{
 background-color: #FFFFFF;
 display: flex;
+padding: 120px 0;
 }
 
 .promo-title{
@@ -350,14 +351,15 @@ display: flex;
 
 .footer-aside {
     background: #2e2f42;
+    display: block;
+        padding: 100px 0;
 }
 .footer-container{
-    display: inline-block;
-    padding: 100px 0;
+    
 
 }
 .footer-logo{
-    display: flex;
+    display: inline-block;
     margin-bottom: 16px;
         font-family:"Raleway", sans-serif;
         font-weight:700;
