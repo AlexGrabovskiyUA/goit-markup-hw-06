@@ -156,24 +156,24 @@ gap: 40px;
 }
 
 .btn-hero {
-    display:block;
+    display: block;
     min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
-        cursor:pointer;
-        background: #4d5ae5;
-            margin-inline: auto; 
-            margin-top: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor:pointer;
+    background: #4d5ae5;
+    margin-inline: auto; 
+    margin-top: 48px;
 }
 .text-btn{
-    display: flex;
+    display: block;
     padding: 16px 32px;
 }
 .btn-hero:hover,.btn-hero:focus{
@@ -184,6 +184,10 @@ background-color: #404BBF;
 
 .blog{
     background-color: #F4F4FD;
+}
+.info-container{
+    display: block;
+    padding: 188px 0 188px;
 }
 .visually-hidden {
     position: absolute;
@@ -201,12 +205,11 @@ background-color: #404BBF;
     display: flex;
     width: calc ((100% - 3 * 24px) / 4);
     gap: 24px;
-    padding-left: 156px;
-    padding-right: 156px;
-    padding-bottom: 120px;
 
 }
 .blog-title{
+    display: flex;
+    padding-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -228,7 +231,21 @@ background-color: #404BBF;
 .publications{
     background-color: #F4F4FD;
 }
-
+.public-container{
+    display: block;
+    padding: 120px 0 120px;
+}
+.intro{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 32px 16px;
+        gap: 8px;
+        background-color: #F4F4FD;
+        
+        
+}
 .public{
     font-weight: 700;
     font-size: 36px;
@@ -242,20 +259,22 @@ background-color: #404BBF;
     padding-bottom: 72px;
     margin-bottom: 72px;
     }
-
+.boxer{
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 .public_items {
         display: flex;
         gap: 24px;
         justify-content: center;
-            padding-left: 156px;
-            padding-right: 156px;
-            padding-bottom: 120px;
+        flex-basis: calc((100% - 3 * 24px) / 4);
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
         background-color: F4F4FD;
+        
 }
 .public-list{
 background-color: #2e2f42;
@@ -266,7 +285,7 @@ background-color: #2e2f42;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        background-color: #FFFFFF;
+        background-color: #F4F4FD;
     
 }
 
@@ -276,7 +295,7 @@ background-color: #2e2f42;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        background-color: #FFFFFF;
+        background-color: #F4F4FD;
 }
 
 /* --------------------------------Our Portfolio----------------------------------- */
