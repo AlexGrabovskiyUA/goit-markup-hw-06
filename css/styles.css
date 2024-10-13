@@ -238,10 +238,11 @@ background-color: #404BBF;
 
 .publications{
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 .public-container{
     display: block;
-    padding: 120px 0 120px;
+
 }
 .intro{
     display: flex;
@@ -273,12 +274,13 @@ background-color: #404BBF;
     border-radius: 0 0 4px 4px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .public_items {
         display: flex;
         gap: 24px;
         justify-content: center;
-        flex-basis: calc((100% - 3 * 24px) / 4);
+        
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
