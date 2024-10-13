@@ -205,7 +205,7 @@ background-color: #404BBF;
 }
 .blog-list{
     display: flex;
-    width: calc ((100% - 3 * 24px) / 4) ;
+    flex-basis: calc((100% - 72px) / 4);
     gap: 24px;
 
 }
@@ -218,6 +218,10 @@ background-color: #404BBF;
         letter-spacing: 0.02em;
         color: #2e2f42;
         
+}
+.blog-title{
+    display: block;
+    margin-bottom: 8px;
 }
 
 .blog-text {
