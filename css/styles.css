@@ -38,6 +38,7 @@ img{
 /* --------------------------------Header----------------------------------- */
 .panel{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
@@ -154,14 +155,17 @@ gap: 40px;
 /* --------------------------------Effective Solutions for Your Business------------------------------- */
 
 .hero {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     background: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.4)), url(/goit-markup-hw-04/images/hero-image.jpg) ;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-04/images/hero-image.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: ;
+    max-width: 1440px;
+    justify-content: center;
     
 }
 .hero-container{
@@ -464,17 +468,21 @@ padding: 120px 0;
 /* --------------------------------footer----------------------------------- */
 
 .footer-aside {
+    display: flex;
+    margin: 0 auto;
     background: #2e2f42;
     display: block;
     padding: 100px 0;
+    max-width: 1440px;
 }
 .footer-container{
-    
+    display: block;
+    margin: 0 auto;
 
 }
 .footer-logo{
     display: inline-block;
-    margin-bottom: 16px;
+    margin: 100px 0px 16px 156px;
         font-family:"Raleway", sans-serif;
         font-weight:700;
         font-size:18px;
@@ -499,4 +507,13 @@ padding: 120px 0;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color:#f4f4fd;
+        margin-left: 156px;
     }
+.footer-all{
+    display: flex;
+    align-items: center;
+    
+}
+.footer-list{
+    display: flex;
+}
