@@ -160,7 +160,7 @@ gap: 40px;
     margin: 0 auto;
     background: #2e2f42;
     padding: 188px 0;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-04/images/hero-image.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -466,18 +466,15 @@ padding: 120px 0;
 }
 
 /* --------------------------------footer----------------------------------- */
-.new{
+
+.footer-aside{
     display: flex;
     align-items: baseline;
-}
-.footer-aside {
-    display: flex;
-    
+        max-width: 1440px;
     margin: 0 auto;
     background: #2e2f42;
-    
     padding: 100px 0;
-    max-width: 1440px;
+
 }
 .footer-container{
     display: flex;
@@ -518,7 +515,7 @@ padding: 120px 0;
 .footer-all{
     display: flex;
     align-items: baseline;
-    margin: 120px;
+    margin: 0 120px;
     
 }
 .footer-list{
