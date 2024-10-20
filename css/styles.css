@@ -309,15 +309,14 @@ margin: 24px 100px;
         gap: 8px;
         background-color: #ffffff;
         padding: 32px 0;
-        transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
         
 }
 .boxer:hover{
-    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow:
+            0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .public{
     display: block;
@@ -338,6 +337,10 @@ margin: 24px 100px;
     border: 1px solid #e7e9fc;
     border-top: none;
     flex-basis:calc((100% - 3 * 24px) / 4);
+    transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .public_items {
         display: flex;
