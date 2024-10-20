@@ -245,8 +245,8 @@ background-color: #404BBF;
 
 }
 .blog-item{
-    display: block;
-    padding-bottom: 8px;
+    display: flex;
+    margin-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -277,7 +277,7 @@ height: 64px;
 margin: 24px 100px;
 }
 .blog-title{
-    display: block;
+    display:flex;
     margin-bottom: 8px;
     padding-top: 8px;
 }
@@ -388,16 +388,21 @@ background-color: #2e2f42;
     justify-content: center;
     margin-top: 8px;
     gap: 24px;
+    
 }
-
+.social-menu{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    
+}
 .social-link{
     display:flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: #4d5ae5;
-        padding: 12px;
         border-radius: 50%;
         transition-property: background-color;
         transition-duration: 250ms;
