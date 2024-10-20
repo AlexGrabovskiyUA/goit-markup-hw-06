@@ -466,9 +466,13 @@ padding: 120px 0;
 }
 
 /* --------------------------------footer----------------------------------- */
-
+.new{
+    display: flex;
+    align-items: baseline;
+}
 .footer-aside {
     display: flex;
+    
     margin: 0 auto;
     background: #2e2f42;
     
@@ -557,6 +561,6 @@ padding: 120px 0;
 .footer-social-link:hover{
     background-color: #31D0AA;
 }
-.footer-social-link:focus {
+.footer-social-link:focus{
     background-color: #31D0AA;
 }
