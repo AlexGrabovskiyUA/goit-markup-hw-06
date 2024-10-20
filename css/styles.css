@@ -245,7 +245,7 @@ background-color: #404BBF;
 
 }
 .blog-item{
-    display: flex;
+    display: block;
     margin-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
@@ -256,7 +256,7 @@ background-color: #404BBF;
 }
 
 .icon-area{
-    display:block;
+    display:flex;
     box-sizing:content-box;
     justify-content:center;
     margin: 0 auto;
@@ -445,6 +445,7 @@ padding: 120px 0;
     row-gap: 48px;
         column-gap: 24px;
         justify-content: center;
+        
 
 }
 .promo-item{
@@ -453,6 +454,10 @@ padding: 120px 0;
         align-items: flex-start;
         flex-direction: column;
         gap: 8px;
+        box-shadow:
+                0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .promo-over{
     display: block;
