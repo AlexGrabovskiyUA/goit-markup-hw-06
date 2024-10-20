@@ -258,12 +258,13 @@ background-color: #404BBF;
 .icon-area{
     display:flex;
     align-items:center;
-    margin-bottom: 8px;
+    justify-content:center;
     border-radius: 4px;
     border: 1px solid #8e8f99;
     width: 264px;
     height: 112px;
     background-color:#F4F4FD;
+    margin-bottom: 8px;
 }
 .blog-icon {
 display: flex;
