@@ -160,7 +160,7 @@ gap: 40px;
     margin: 0 auto;
     background: #2e2f42;
     padding: 188px 0;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-image.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -507,7 +507,7 @@ box-shadow:
 .footer-aside{
     display: flex;
     align-items: baseline;
-        max-width: 1440px;
+        
     margin: 0 auto;
     background: #2e2f42;
     padding: 100px 0;
@@ -558,7 +558,7 @@ box-shadow:
 .footer-list{
     display:flex;
     justify-content: center;
-    padding-top: 16px;
+    
     gap: 16px;
 }
 .footer-nav{
