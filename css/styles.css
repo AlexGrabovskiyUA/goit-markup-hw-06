@@ -599,11 +599,16 @@ background-color: #31D0AA;
 background-color: #31D0AA;
 }
 .footer-input{
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid #ffffff;
+    color: #ffffff;
     border-radius: 4px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     width: 264px;
     height: 40px;
+    padding-left: 16px;
     background-color: transparent;
 }
 .footer-input-title {
@@ -630,15 +635,18 @@ background-color: #31D0AA;
     padding-left: 16px ;
 }
 .footer-input-menu{
-margin-left: 80px;
 
 }
+.footer-form{
+display: flex;
+gap 24px;
+}
 .footer-input-c{
-    display: flex;
+    
 }
 .footer-btn{
     display: flex;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
         font-weight: 500;
         font-size: 16px;
@@ -662,6 +670,9 @@ margin-left: 80px;
 .footer-btn-icon{
     margin-left: 16px;
 }
+
+-----------------------MODAL-------------------------------------
+
 .backdrop{
     position: fixed;
     top: 0;
