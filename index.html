@@ -253,7 +253,7 @@
             </div>
         </section>
     </main>
-    <Footer class="footer-aside new">
+    <footer class="footer-aside new">
         <div class="footer-all container">
             <div class="footer-kub">
                     <a class="footer-logo" href="./index.html">Web<span class="span-footer-logo">Studio</span></a>
@@ -294,21 +294,55 @@
             </div>
 
             <div class="footer-input-menu">
-            <p class="footer-input-title">Subscribe</p>
-            <div class="footer-input-c">
-                <label>  
-                    <input class="footer-input" type="email" name="email" placeholder="E-mail"  />
-                </label>
-                <button class="footer-btn" type="submit"><span class="btn-span">Subscribe</span>
-                <svg class="footer-btn-icon " width="24" height="24">
+                <p class="footer-input-title">Subscribe</p>
+                <div class="footer-input-c">
+                    <label>  
+                        <input class="footer-input" type="email" name="email" placeholder="E-mail"  />
+                    </label>
+                    <button class="footer-btn" type="submit">Subscribe
+                    <svg class="footer-btn-icon " width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-                </button>
-            </div>
-
+                    </svg>
+                    </button>
+                </div>
             </div>   
         </div>
-    </Footer>
+    </footer>
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="modal-btn-x">
+                <svg class="icon-x" width="8" height="8">
+                    <use href="./images/icons.svg#icon-X"></use>
+                </svg>
+            </button>
+            <p class="form-name">Leave your contacts and we will call you back</p>
+            <form class="form">
+                <div>
+                <label for="name">
+                    <input class="mod-input" type="text" name="Name" id="name">
+                </label>
+                </div>
+                <div>
+                    <label for="tel">
+                        <input class="mod-input" type="tel" name="Tel" id="tel">
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        <input class="mod-input" type="email" id="email">
+                    </label>
+                </div>
+                <div>
+                    <label for="Comment">
+                        <textarea class="" name="" id="Comment" placeholder="Text input"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
