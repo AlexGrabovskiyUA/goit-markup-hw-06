@@ -742,12 +742,10 @@ gap:24px;
 
 .modal-btn-x:hover,
 .modal-btn-x:focus+.icon-x {
-    fill: #ffffff;
+    fill:#ffffff;
 }
 
-.modal-btn-x:focus+.icon-x {
-    fill: #ffffff;
-}
+
 
 .icon-x {
     justify-content: center;
