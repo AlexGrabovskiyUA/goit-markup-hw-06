@@ -740,10 +740,16 @@ gap:24px;
     background-color: #404BBF;
 }
 
-.modal-btn-x:focus ,
-.modal-btn-x:hover +.icon-x{
+.modal-btn-x:hover >.icon-x{
     fill: #ffffff;
 }
+.modal-btn-x:focus>.icon-x {
+    fill: #ffffff;
+}
+/*.modal-btn-x:focus ,
+.modal-btn-x:hover +.icon-x{
+    fill: #ffffff;
+}*/
 
 
 
