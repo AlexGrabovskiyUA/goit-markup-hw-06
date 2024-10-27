@@ -857,7 +857,7 @@ position: relative;
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        
 }
 .btn-modal:hover,
 .btn-modal:focus {
