@@ -904,13 +904,9 @@ position: relative;
     margin-bottom: 24px;
 }
 
-.input-check:checked, .icon-input-span{
+.input-check:checked + .priv-item >.icon-ok{
     fill: #F4F4FD;
     border: none;
+    background-color: #404bbf;
 }
-        .input-check:checked,
-        .icon-ok{
-        fill:#F4F4FD;
-        border: none;
-        background-color: #404bbf;
-        }
+    
