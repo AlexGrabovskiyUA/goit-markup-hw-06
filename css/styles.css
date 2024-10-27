@@ -816,8 +816,9 @@ position: relative;
     font: 400 12px / 1.17 "Roboto", sans-serif;
     letter-spacing: 0.04em;
     resize: none;
-    
-    margin-top: 4px;
+    background-color: transparent;
+    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
@@ -841,7 +842,7 @@ position: relative;
         display: block;
         min-width: 169px;
         height: 56px;
-        border: none;
+        border:none;
         border-radius: 4px;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -861,12 +862,14 @@ position: relative;
 .btn-modal:hover,
 .btn-modal:focus {
     background-color: #404BBF;
+    border: none;
 }
 
 .priv-item{
     display: flex;
     margin-top: 16px;
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    font-size:12px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     
