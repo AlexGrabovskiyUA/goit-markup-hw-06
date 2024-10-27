@@ -681,18 +681,19 @@ gap:24px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(46, 47, 66, 0.4);
+    background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: 
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-.backdrop.is-open{
+.backdrop .is-open{
     opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    visibility: visible;
+    pointer-events: auto;
+    
 }
 .modal{
     position: absolute;
@@ -713,17 +714,32 @@ gap:24px;
 .modal-label{
 font: 400 12px / 1.16667 "Roboto", sans-serif;
 letter-spacing: 0.04em;
+line-height: 1.17;
 color: #8e8f99;
+
 
 }
 
 .footer-area{
     display: flex;
-    max-width: 360px;
+    width: 360px;
+    height: 120px;
     resize: none;
+    margin-top: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-area:focus-within{
+    border-color: #4D5AE5;
+}
+::placeholder{
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+    
 }
 .modal-btn-x{
     display: flex;
@@ -778,6 +794,7 @@ fill: #ffffff;
     width: 100%;
     height: 40px;
     padding-left: 38px;
+    margin-top: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
