@@ -351,9 +351,15 @@
                         <textarea class="footer-area" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                     </div>
                     <div class="checkbox-all">
-                        <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
-                        <label class="priv-item" for="user-privacy">I accept the terms and conditions of the</label>
-                        <span class="icon-ok"></span>
+                        <input class="input-check visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+                        <label class="priv-item" for="user-privacy">
+                            <span class="icon-ok">
+                            <svg class="icon-input-span" width="10" height="8">
+                            <use href="./images/icons.svg#icon-click"></use></svg>
+                            </span>
+                            I accept the terms and conditions of the
+                        </label>
+                        
                         <a class="checkbox-link" href="">Privacy Policy</a>
                     </div>
                     <button type="button" class="btn-modal">Send</button>
