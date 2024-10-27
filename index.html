@@ -311,17 +311,17 @@
     </footer>
     <div class="backdrop is-open">
         <div class="modal">
-            <button class="modal-btn-x">
+            <button type="button" class="modal-btn-x">
                 <svg class="icon-x" width="8" height="8">
                     <use href="./images/icons.svg#icon-X"></use>
                 </svg>
             </button>
             <p class="form-name">Leave your contacts and we will call you back</p>
             <form class="form">
-                
+                <div class="modal-structure">
                     <label class="modal-label" for="user-name">Name
                     <div class="item-input">
-                        <input class="mod-input" type="text" name="Name" id="user-name">
+                        <input class="mod-input" type="text" name="user-name" id="user-name">
                         <svg class="icon-input" width="18" height="24">
                         <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -329,7 +329,7 @@
                     </label>
                     <label class="modal-label" for="tel">Phone
                         <div class="item-input">
-                            <input class="mod-input" type="tel" name="Tel" id="tel">
+                            <input class="mod-input" type="tel" name="tel" id="tel">
                             <svg class="icon-input" width="18" height="24">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
@@ -358,6 +358,7 @@
                     </label>
                     
                     
+                </div>
                 </div>
                     <button type="button" class="btn-modal">Send</button>
             </form>
