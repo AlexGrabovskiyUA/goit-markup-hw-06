@@ -41,7 +41,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="btn-hero">Order Service</button>
+                <button type="button" class="btn-hero" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="blog">
@@ -309,9 +309,9 @@
             </div>   
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-btn-x">
+            <button type="button" class="modal-btn-x" data-modal-close>
                 <svg class="icon-x" width="8" height="8">
                     <use href="./images/icons.svg#icon-X"></use>
                 </svg>
@@ -368,6 +368,7 @@
             </form>
         </div>
     </div>
+    <script src="./css/js/modal.js"></script>
 </body>
 
 </html>
