@@ -19,7 +19,7 @@
     />
 </head>
 <body>
-    <header class="panel">
+    <header class="panel ">
             <div class="container header-container">
                 <nav class="navigation-panel">
                             <a class="logo-link" href="./index.html">Web<span class="span-logo">Studio</span></a>
@@ -36,13 +36,68 @@
                             <li><a class="link-address" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
-                <button class="mobile-menu" type="button">
+                <button class="mobile-menu-btn"  type="button" data-mobile-open>
                     <svg class="mobile-menu-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-diagram"></use>
+                        <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
                     </svg>
                 </button>
             </div>
+            
     </header>
+    <div class="mob-menu" data-mobile>
+        <div class="container mob-menu-container">
+            
+            <button type="button" class="mobile-menu-close" data-mobile-close>
+                <svg class="icon-x" width="8" height="8">
+                    <use href="./images/icons.svg#icon-X"></use>
+                </svg>
+            </button>
+            
+            <nav class="mob-menu-nav">
+                <ul class="link-menu-mobile">
+                    <li><a class="link-panel-m" href="./index.html">Studio</a></li>
+                    <li><a class="link-panel-m" href="">Portfolio</a></li>
+                    <li><a class="link-panel-m" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="list-address-m">
+                    <li><a class="link-address-m" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="link-address-m" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <ul class="mobile-list">
+                <li class="footer-menu">
+                    <a class="footer-social-link" href="#">
+                        <svg class="footer-social-icon " width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-menu">
+                    <a class="footer-social-link" href="#">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-menu">
+                    <a class="footer-social-link" href="#">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-menu">
+                    <a class="footer-social-link" href="#">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main>
         <section class="hero ">
             <div class="container hero-container">
@@ -50,7 +105,7 @@
                 <button type="button" class="btn-hero" data-modal-open>Order Service</button>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog ">
             <div class="container ">
                 <h2 class="name-blog visually-hidden">Information</h2>
                 <ul class="blog-list">
@@ -97,12 +152,14 @@
                 </ul>
             </div>
         </section>
-        <section class="publications ">
+        <section class="publications hide">
             <div class="container ">
                 <h2 class="public">Our Team</h2>
                 <ul class="public_items">
                     <li class="boxer">
-                        <img class="public_img" src="./images/team_card_1.jpg" alt="team card 1" width="264">
+                        <img class="public_img" 
+                        srcset="./images/team_card_1.jpg 1x, ./images/team1-m-2x.jpg 2x "
+                        src="./images/team_card_1.jpg" alt="team card 1" width="264">
                         <div class="intro">
                             <h3 class="public_subtitle">Mark Guerrero</h3>
                             <p class="public_text">Product Designer</p>
@@ -127,7 +184,9 @@
                         </div>
                     </li>
                     <li class="boxer">
-                        <img class="public_img" src="./images/team_card_2.jpg" alt="team card 2" width="264">
+                        <img class="public_img"
+                        srcset="./images/team_card_2.jpg 1x, ./images/team2-m-2x.jpg 2x "
+                        src="./images/team_card_2.jpg" alt="team card 2" width="264">
                         <div class="intro">
                             <h3 class="public_subtitle">Tom Ford</h3>
                             <p class="public_text">Frontend Developer</p>
@@ -156,7 +215,9 @@
                         </div>
                     </li>
                     <li class="boxer">
-                        <img class="public_img" src="./images/team_card_3.jpg" alt="team card 3" width="264">
+                        <img class="public_img" 
+                        srcset="./images/team_card_3.jpg 1x, ./images/team3-m-2x.jpg 2x"
+                        src="./images/team_card_3.jpg" alt="team card 3" width="264">
                         <div class="intro">
                             <h3 class="public_subtitle">Camila Garcia</h3>
                             <p class="public_text">Marketing</p>
@@ -180,7 +241,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="boxer"><img class="public_img" src="./images/team_card_4.jpg" alt="team card 4" width="264">
+                    <li class="boxer">
+                        <img class="public_img"
+                        srcset="./images/team_card_4.jpg 1x, ./images/team4-m-2x.jpg 2x"
+                        src="./images/team_card_4.jpg" alt="team card 4" width="264">
                         <div class="intro">
                             <h3 class="public_subtitle">Daniel Wilson</h3>
                             <p class="public_text">UI Designer</p>
@@ -209,7 +273,19 @@
                 <ul class="promo-list">
                     <li class="promo-item">
                         <div class="item-slide">
-                            <img src="./images/item_card_1.jpg" alt="item card 1" width="360">
+                            <picture>
+                                <source
+                                media="(min-width:1158px)"
+                                srcset="./images/item_card_1.jpg 1x, ./images/img-1-2x.jpg 2x "
+                                >
+                                <source media="(min-width:768px)" 
+                                srcset="./images/item-card1-t.jpg 1x, ./images/item-card1-t2.jpg 2x ">
+                                <source media="(max-width:767px)" 
+                                srcset="./images/item-card1-m.jpg 1x, ./images/item-card1-m-2x.jpg 2x ">
+                                <img src="./images/item_card_1.jpg" alt="item card 1" 
+                                width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Banking App</h3>
@@ -217,7 +293,14 @@
                     </li>
                     <li class="promo-item">
                         <div class="item-slide">
-                            <img class="promo-img" src="./images/item_card_2.jpg" alt="item card 2" width="360">
+                            <picture>
+                                <source media="(min-width:1158px)" srcset="./images/item_card_2.jpg 1x, ./images/img-2-2x.jpg 2x ">
+                                <source media="(min-width:768px)" srcset="./images/item-card2-t.jpg 1x, ./images/item-card2-t2.jpg 2x ">
+                                <source media="(max-width:767px)" srcset="./images/item-card2-m.jpg 1x, ./images/item-card2-m-2x.jpg 2x ">
+                                <img class="promo-img" src="./images/item_card_2.jpg" alt="item card 2" 
+                                width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Cashless Payment</h3>
@@ -225,7 +308,13 @@
                     </li>
                     <li class="promo-item">
                         <div class="item-slide">
+                            <picture>
+                                <source media="(min-width:1158px)" srcset="./images/item_card_3.jpg 1x, ./images/img-3-2x.jpg 2x ">
+                                <source media="(min-width:768px)" srcset="./images/item-card3-t.jpg 1x, ./images/item-card3-t2.jpg 2x ">
+                                <source media="(max-width:767px)" srcset="./images/item-card3-m.jpg 1x, ./images/item-card3-m-2x.jpg 2x ">
                             <img class="promo-img" src="./images/item_card_3.jpg" alt="item card 3" width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Meditation App</h3>
@@ -233,7 +322,13 @@
                     </li>
                     <li class="promo-item">
                         <div class="item-slide">
+                            <picture>
+                                <source media="(min-width:1158px)" srcset="./images/item_card_4.jpg 1x, ./images/img-4-2x.jpg 2x ">
+                                <source media="(min-width:768px)" srcset="./images/item-card4-t.jpg 1x, ./images/item-card4-t2.jpg 2x ">
+                                <source media="(max-width:767px)" srcset="./images/item-card4-m.jpg 1x, ./images/item-card4-m-2x.jpg 2x ">
                             <img class="promo-img" src="./images/item_card_4.jpg" alt="item card 4" width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Taxi Service</h3>
@@ -241,7 +336,13 @@
                     </li>
                     <li class="promo-item">
                         <div class="item-slide">
+                            <picture>
+                                <source media="(min-width:1158px)" srcset="./images/item_card_5.jpg 1x, ./images/img-5-2x.jpg 2x ">
+                                <source media="(min-width:768px)" srcset="./images/item-card5-t.jpg 1x, ./images/item-card5-t2.jpg 2x ">
+                                <source media="(max-width:767px)" srcset="./images/item-card5-m.jpg 1x, ./images/item-card5-m-2x.jpg 2x ">
                             <img class="promo-img" src="./images/item_card_5.jpg" alt="item card 5" width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Screen Illustrations</h3>
@@ -249,7 +350,13 @@
                     </li>
                     <li class="promo-item">
                         <div class="item-slide">
+                            <picture>
+                                <source media="(min-width:1158px)" srcset="./images/item_card_6.jpg 1x, ./images/img-6-2x.jpg 2x ">
+                                <source media="(min-width:768px)" srcset="./images/item-card6-t.jpg 1x, ./images/item-card6-t2.jpg 2x ">
+                                <source media="(max-width:767px)" srcset="./images/item-card6-m.jpg 1x, ./images/item-card6-m-2x.jpg 2x ">
                             <img class="promo-img" src="./images/item_card_6.jpg" alt="item card 6" width="360">
+                            </picture>
+                            
                         <p class="text-slide">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="promo-over"><h3 class="promo-subtitle">Online Courses</h3>
@@ -363,8 +470,8 @@
                             <svg class="icon-input-span" width="10" height="8">
                             <use href="./images/icons.svg#icon-click"></use></svg>
                             </span>
-                            I accept the terms and conditions of the
-                            <a class="checkbox-link" href="">Privacy Policy</a>
+                            <p class="checkbox-text">I accept the terms and conditions of the
+                            <a class="checkbox-link" href="">Privacy Policy</a></p>
                         </label>
                         
                     </div>
@@ -375,6 +482,7 @@
         </div>
     </div>
     <script src="./css/js/modal.js"></script>
+    <script src="./css/js/mobile.js"></script>
 </body>
 
 </html>
